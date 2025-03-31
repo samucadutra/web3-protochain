@@ -1,0 +1,25 @@
+{
+  "name": "web3-protochain",
+  "version": "1.0.0",
+  "description": "Blockchain prototype using Node and Typescript",
+  "main": "index.js",
+  "scripts": {
+    "compile": "npx tsc",
+    "start": "node ./dist/blockchain.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samucadutra/web3-protochain.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/samucadutra/web3-protochain/issues"
+  },
+  "homepage": "https://github.com/samucadutra/web3-protochain#readme",
+  "devDependencies": {
+    "typescript": "^5.8.2"
+  }
+}
