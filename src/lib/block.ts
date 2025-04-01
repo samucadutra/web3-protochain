@@ -9,7 +9,6 @@ export default class Block {
 
     isValid(): boolean {
         if (this.index < 0) return false;
-        if (!this.hash) return false;
-        return true;
+        return this.hash != "";
     }
 }

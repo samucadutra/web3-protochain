@@ -43,3 +43,36 @@ Blockchain prototype using Node and Typescript
 #### run the *dev* script:
 `npm run dev`
 
+### Install jest
+`npm i -D jest ts-jest @types/jest`
+
+#### Initialize jest
+`jest --init`
+
+#### Changes in jest.config.js
+```
+collectCoverageFrom: ["<rootDir>/src/lib/**/*.ts"],
+
+coverageReporters: [
+    "text",
+    "lcov",
+  ],
+
+preset: "ts-jest",
+
+testMatch: [
+    "**/__tests__/**/*.ts"
+  ],
+```
+
+#### After modifying the jest.config.js file, add new configuration to tsconfig.json end of the file:
+```
+"exclude": [
+    "__tests__",
+    "jest.config.ts"
+  ],
+  "ts-node": {
+    "transpileOnly": true
+  }
+```
+
