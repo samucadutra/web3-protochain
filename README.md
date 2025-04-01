@@ -76,3 +76,9 @@ testMatch: [
   }
 ```
 
+### Install crypto-js
+`npm i crypto-js`
+
+### Install @types/crypto-js
+`npm i -D @types/crypto-js`
+
