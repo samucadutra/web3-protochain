@@ -1,9 +1,8 @@
-let idade: number;
-let nome: string;
-let dataNascimento: Date;
+import Block from "./block";
 
-function somar(a: number, b: number): number {
-  return a + b;
-}
+const block = new Block(1, "");
+// block.hash = "1234567890abcdef";
+// block.index = 2;
 
-console.log(somar(4, 5));
+
+console.log(block.isValid());
